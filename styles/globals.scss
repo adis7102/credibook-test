@@ -1,0 +1,27 @@
+@import './fonts';
+
+html,
+body {
+  padding: 0;
+  margin: 120px 0 0 0;
+  font-family: 'BebasNue-Regular' !important;
+  background-color: #2c3e50 !important;
+}
+
+div {
+  color: white;
+}
+
+h1, h2, h3, h4, p {
+  color: white;
+  margin: 0 !important;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,132 @@
+@import "../colors";
+
+
+.button-download {
+  margin-left: 60px;
+}
+
+.movie-list {
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px 50px 50px;
+
+  &-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .movie-item {
+      width: 270px;
+      border: 1px solid $color-N500;
+      margin-bottom: 20px;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 8px;
+      margin: 15px 15px;
+
+      .rank-wrap {
+        position: relative;
+
+        .rank-triangle {
+          position: absolute;
+          z-index: 1;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 56px 56px 0 0;
+          border-color: #2ecc71 transparent transparent transparent;
+        }
+
+        .rank-text {
+          position: absolute;
+          z-index: 2;
+          top: 5px;
+          left: 8px;
+          color: white;
+          font-weight: 800;
+          font-size: 18px;
+        }
+
+        &.first-pos {
+          .rank-triangle {
+            border-width: 80px 80px 0 0;
+            border-color: #e74c3c transparent transparent transparent;
+          }
+
+          .rank-text {
+            font-size: 45px;
+            top: -5px;
+            left: 10px;
+          }
+        }
+
+        &.second-pos {
+          .rank-triangle {
+            border-width: 64px 64px 0 0;
+            border-color: #e67e22 transparent transparent transparent;
+          }
+
+          .rank-text {
+            font-size: 34px;
+            top: -3px;
+            left: 8px;
+          }
+        }
+
+        &.third-pos {
+          .rank-triangle {
+            border-width: 60px 60px 0 0;
+            border-color: #f1c40f transparent transparent transparent;
+          }
+
+          .rank-text {
+            font-size: 30px;
+            top: 0px;
+            left: 8px;
+          }
+        }
+      }
+
+      .image-wrap {
+        overflow: hidden;
+        height: 370px;
+      }
+
+      &-description {
+        padding: 8px;
+
+        .movie-title {
+          width: 100;
+          font-size: 24px;
+          font-weight: 500;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          color: white;
+          margin-bottom: 10px;
+        }
+
+        .movie-info {
+          color: white;
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 5px;
+
+          span {
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 0 36px -10px #30e6f6;
+        transition: 250ms ease-in-out;
+      }
+    }
+
+    .button-load-more {
+      position: relative;
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.about-page {
+  &-wrap {
+    padding: 50px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+
+    .title {
+      font-size: 64px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      text-decoration: underline;
+    }
+
+    &-desc {
+      max-width: 40vw;
+      margin-top: 50px;
+
+
+      p {
+        font-size: 24px;
+      }
+
+      a {
+        font-size: 35px;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,9 @@
+.modal-download {
+  width: 90vw;
+  max-width: 90vw !important;
+
+  .modal-body {
+    max-height: 500px;
+    overflow: auto;
+  }
+}
