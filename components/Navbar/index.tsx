@@ -5,18 +5,18 @@ const Navbar = () => {
   
   return (
     <div className="navbar-comp">
-      <Link href="/">
+      <Link href="/" prefetch={false}>
         <h1 className="navbar-comp-title">Movie SPOT!</h1>
       </Link>
       <div className="navbar-comp-routing">
-        <Link href="/">
+        <Link href="/" prefetch={false}>
           <div className="navbar-comp-routing-button">
             <p
               
             >Home</p>
           </div>
         </Link>
-        <Link href="/about">
+        <Link href="/about" prefetch={false}>
           <div className="navbar-comp-routing-button">
             <p
               
